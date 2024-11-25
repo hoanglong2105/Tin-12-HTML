@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 - Nhiệm vụ 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-top: 20px;
+            font-size: 2.5em;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 8px;
+            width: 60%;
+            max-width: 800px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        label {
+            font-size: 1.1em;
+            display: block;
+            margin: 10px 0;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đóng góp ý kiến cho thư viện của nhà trường</h1>
+        <form>
+            <h2>1. Thông tin về người góp ý</h2>
+            <label for="txtTen">Họ và tên:</label>
+            <input type="text" id="txtTen" name="txtTen" placeholder="Nhập họ và tên của bạn">
+
+            <label for="txtEmail">Địa chỉ email:</label>
+            <input type="text" id="txtEmail" name="txtEmail" placeholder="Nhập địa chỉ email">
+
+            <h2>2. Đóng góp ý kiến</h2>
+            <label for="txtComment">Ý kiến đóng góp:</label>
+            <textarea name="txtComment" id="txtComment" rows="6" cols="40" placeholder="Nhập ý kiến đóng góp của bạn"></textarea>
+        </form>
+        <a href="index.html" class="home-button">Quay về trang chủ</a>
+    </div>
+</body>
+</html>

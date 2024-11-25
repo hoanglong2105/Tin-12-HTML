@@ -1,0 +1,82 @@
+<!DOC<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 - Nhiệm vụ 3</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Phần tử cha chứa 2 iframe */
+        .chiadoi {
+            display: flex;
+            height: 100vh; /* Chiếm toàn bộ chiều cao của màn hình */
+        }
+
+        /* Cả hai iframe chiếm 50% màn hình */
+        iframe {
+            flex: 1; /* Mỗi iframe chiếm bằng nhau */
+            border: none; /* Bỏ viền */
+        }
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+        }
+        .task {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .task:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+    </style> 
+</head>
+<body>
+    <div class="chiadoi">
+    <iframe src="Bai5-NV1.html"></iframe>
+    <iframe src="Bai5-NV2.html"></iframe>
+    </div>
+    <a href="index.html" class="home-button">Quay về trang chủ</a>
+</body>
+</html>

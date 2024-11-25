@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4 - Nhiệm vụ 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Bảng */
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Nút quay về trang chủ */
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        /* Tiêu đề */
+        h1 {
+            color: #333;
+            margin-top: 50px;
+            font-size: 2em;
+        }
+
+        /* Liên kết */
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thống kê số lượng học sinh lớp 12A1 tham gia hoạt động thể thao của trường</h1>
+    <table>
+        <tr>
+            <th>Nội dung</th>
+            <th>Nam</th>
+            <th>Nữ</th>
+        </tr>
+        <tr>
+            <td>Bóng bàn</td>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Cờ vua</td>
+            <td>8</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Chạy cự li ngắn</td>
+            <td>15</td>
+            <td>6</td>
+        </tr>
+    </table>
+    <a href="index.html" class="home-button">Quay về trang chủ</a>
+</body>
+</html>

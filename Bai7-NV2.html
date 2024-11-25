@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7 - Nhiệm vụ 2</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #4CAF50;
+        }
+        form {
+            background-color: white;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #4CAF50;
+            font-size: 1.5em;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đóng góp ý kiến cho thư viện của nhà trường</h1>
+    <form action="Bai7-NV3.html">
+        <h2>1. Thông tin về người góp ý</h2>
+        <label for="txtTen">Họ và tên:</label>
+        <input type="text" id="txtTen" name="txtTen" placeholder="Nhập họ và tên của bạn">
+
+        <label for="txtEmail">Địa chỉ email:</label>
+        <input type="text" id="txtEmail" name="txtEmail" placeholder="Nhập địa chỉ email">
+
+        <h2>2. Đóng góp ý kiến</h2>
+        <label for="txtComment">Ý kiến đóng góp:</label>
+        <textarea name="txtComment" id="txtComment" rows="6" cols="40" placeholder="Nhập ý kiến đóng góp của bạn"></textarea>
+
+        <p>Thể loại cần bổ sung thêm sách:</p>
+        <div class="checkbox-group">
+            <input type="checkbox" name="chkTruyenNgan"> Truyện ngắn <br>
+            <input type="checkbox" name="chkKiNang"> Kĩ năng sống <br>
+            <input type="checkbox" name="chkCNTT"> Công nghệ thông tin <br>
+            <input type="checkbox" name="chkTruyenTranh"> Truyện tranh <br>
+            <input type="checkbox" name="chkLichSu"> Lịch sử <br>
+        </div>
+
+        <input type="submit" name="cmd" value="Góp ý">
+    </form>
+
+    <a href="index.html" class="home-button">Quay về trang chủ</a>
+</body>
+</html>
